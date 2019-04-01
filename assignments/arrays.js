@@ -63,22 +63,133 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
-console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
+console.log("Car 33 is a " + inventory[32].car_make +" " + inventory[32].car_model + " " + inventory[32].car_year);
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = 0;
-console.log();
+let lastCar = inventory.slice(-1)[0];
+console.log(lastCar.car_make + " " + lastCar.car_model);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
-console.log();
+
+for (i = 0; i < 1; i++){
+    carModels.push(inventory[0].car_model);
+    carModels.push(inventory[1].car_model);
+    carModels.push(inventory[2].car_model);
+    carModels.push(inventory[3].car_model);
+    carModels.push(inventory[4].car_model);
+    carModels.push(inventory[5].car_model);
+    carModels.push(inventory[6].car_model);
+    carModels.push(inventory[7].car_model);
+    carModels.push(inventory[8].car_model);
+    carModels.push(inventory[9].car_model);
+    carModels.push(inventory[10].car_model);
+    carModels.push(inventory[11].car_model);
+    carModels.push(inventory[12].car_model);
+    carModels.push(inventory[13].car_model);
+    carModels.push(inventory[14].car_model);
+    carModels.push(inventory[15].car_model);
+    carModels.push(inventory[16].car_model);
+    carModels.push(inventory[17].car_model);
+    carModels.push(inventory[18].car_model);
+    carModels.push(inventory[19].car_model);
+    carModels.push(inventory[20].car_model);
+    carModels.push(inventory[21].car_model);
+    carModels.push(inventory[22].car_model);
+    carModels.push(inventory[23].car_model);
+    carModels.push(inventory[24].car_model);
+    carModels.push(inventory[25].car_model);
+    carModels.push(inventory[26].car_model);
+    carModels.push(inventory[27].car_model);
+    carModels.push(inventory[28].car_model);
+    carModels.push(inventory[29].car_model);
+    carModels.push(inventory[30].car_model);
+    carModels.push(inventory[31].car_model);
+    carModels.push(inventory[32].car_model);
+    carModels.push(inventory[33].car_model);
+    carModels.push(inventory[34].car_model);
+    carModels.push(inventory[35].car_model);
+    carModels.push(inventory[36].car_model);
+    carModels.push(inventory[37].car_model);
+    carModels.push(inventory[38].car_model);
+    carModels.push(inventory[39].car_model);
+    carModels.push(inventory[40].car_model);
+    carModels.push(inventory[41].car_model);
+    carModels.push(inventory[42].car_model);
+    carModels.push(inventory[43].car_model);
+    carModels.push(inventory[44].car_model);
+    carModels.push(inventory[45].car_model);
+    carModels.push(inventory[46].car_model);
+    carModels.push(inventory[47].car_model);
+    carModels.push(inventory[48].car_model);
+    carModels.push(inventory[49].car_model);
+    
+
+}
+carModels.sort();
+
+   
+console.log(carModels);
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
-console.log();
+for (i = 0; i < 1; i++) {
+    carYears.push(inventory[0].car_year);
+    carYears.push(inventory[1].car_year);
+    carYears.push(inventory[2].car_year);
+    carYears.push(inventory[3].car_year);
+    carYears.push(inventory[4].car_year);
+    carYears.push(inventory[5].car_year);
+    carYears.push(inventory[6].car_year);
+    carYears.push(inventory[7].car_year);
+    carYears.push(inventory[8].car_year);
+    carYears.push(inventory[9].car_year);
+    carYears.push(inventory[10].car_year);
+    carYears.push(inventory[11].car_year);
+    carYears.push(inventory[12].car_year);
+    carYears.push(inventory[13].car_year);
+    carYears.push(inventory[14].car_year);
+    carYears.push(inventory[15].car_year);
+    carYears.push(inventory[16].car_year);
+    carYears.push(inventory[17].car_year);
+    carYears.push(inventory[18].car_year);
+    carYears.push(inventory[19].car_year);
+    carYears.push(inventory[20].car_year);
+    carYears.push(inventory[21].car_year);
+    carYears.push(inventory[22].car_year);
+    carYears.push(inventory[23].car_year);
+    carYears.push(inventory[24].car_year);
+    carYears.push(inventory[25].car_year);
+    carYears.push(inventory[26].car_year);
+    carYears.push(inventory[27].car_year);
+    carYears.push(inventory[28].car_year);
+    carYears.push(inventory[29].car_year);
+    carYears.push(inventory[30].car_year);
+    carYears.push(inventory[31].car_year);
+    carYears.push(inventory[32].car_year);
+    carYears.push(inventory[33].car_year);
+    carYears.push(inventory[34].car_year);
+    carYears.push(inventory[35].car_year);
+    carYears.push(inventory[36].car_year);
+    carYears.push(inventory[37].car_year);
+    carYears.push(inventory[38].car_year);
+    carYears.push(inventory[39].car_year);
+    carYears.push(inventory[40].car_year);
+    carYears.push(inventory[41].car_year);
+    carYears.push(inventory[42].car_year);
+    carYears.push(inventory[43].car_year);
+    carYears.push(inventory[44].car_year);
+    carYears.push(inventory[45].car_year);
+    carYears.push(inventory[46].car_year);
+    carYears.push(inventory[47].car_year);
+    carYears.push(inventory[48].car_year);
+    carYears.push(inventory[49].car_year);
+}
+carYears.sort();
+console.log(carYears);
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
