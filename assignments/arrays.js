@@ -74,58 +74,8 @@ console.log(lastCar.car_make + " " + lastCar.car_model);
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
 
-for (i = 0; i < 1; i++){
-    carModels.push(inventory[0].car_model);
-    carModels.push(inventory[1].car_model);
-    carModels.push(inventory[2].car_model);
-    carModels.push(inventory[3].car_model);
-    carModels.push(inventory[4].car_model);
-    carModels.push(inventory[5].car_model);
-    carModels.push(inventory[6].car_model);
-    carModels.push(inventory[7].car_model);
-    carModels.push(inventory[8].car_model);
-    carModels.push(inventory[9].car_model);
-    carModels.push(inventory[10].car_model);
-    carModels.push(inventory[11].car_model);
-    carModels.push(inventory[12].car_model);
-    carModels.push(inventory[13].car_model);
-    carModels.push(inventory[14].car_model);
-    carModels.push(inventory[15].car_model);
-    carModels.push(inventory[16].car_model);
-    carModels.push(inventory[17].car_model);
-    carModels.push(inventory[18].car_model);
-    carModels.push(inventory[19].car_model);
-    carModels.push(inventory[20].car_model);
-    carModels.push(inventory[21].car_model);
-    carModels.push(inventory[22].car_model);
-    carModels.push(inventory[23].car_model);
-    carModels.push(inventory[24].car_model);
-    carModels.push(inventory[25].car_model);
-    carModels.push(inventory[26].car_model);
-    carModels.push(inventory[27].car_model);
-    carModels.push(inventory[28].car_model);
-    carModels.push(inventory[29].car_model);
-    carModels.push(inventory[30].car_model);
-    carModels.push(inventory[31].car_model);
-    carModels.push(inventory[32].car_model);
-    carModels.push(inventory[33].car_model);
-    carModels.push(inventory[34].car_model);
-    carModels.push(inventory[35].car_model);
-    carModels.push(inventory[36].car_model);
-    carModels.push(inventory[37].car_model);
-    carModels.push(inventory[38].car_model);
-    carModels.push(inventory[39].car_model);
-    carModels.push(inventory[40].car_model);
-    carModels.push(inventory[41].car_model);
-    carModels.push(inventory[42].car_model);
-    carModels.push(inventory[43].car_model);
-    carModels.push(inventory[44].car_model);
-    carModels.push(inventory[45].car_model);
-    carModels.push(inventory[46].car_model);
-    carModels.push(inventory[47].car_model);
-    carModels.push(inventory[48].car_model);
-    carModels.push(inventory[49].car_model);
-    
+for (i = 0; i < inventory.length; i++){
+    carModels.push(inventory[i].car_model);    
 
 }
 carModels.sort();
@@ -136,57 +86,9 @@ console.log(carModels);
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
-for (i = 0; i < 1; i++) {
-    carYears.push(inventory[0].car_year);
-    carYears.push(inventory[1].car_year);
-    carYears.push(inventory[2].car_year);
-    carYears.push(inventory[3].car_year);
-    carYears.push(inventory[4].car_year);
-    carYears.push(inventory[5].car_year);
-    carYears.push(inventory[6].car_year);
-    carYears.push(inventory[7].car_year);
-    carYears.push(inventory[8].car_year);
-    carYears.push(inventory[9].car_year);
-    carYears.push(inventory[10].car_year);
-    carYears.push(inventory[11].car_year);
-    carYears.push(inventory[12].car_year);
-    carYears.push(inventory[13].car_year);
-    carYears.push(inventory[14].car_year);
-    carYears.push(inventory[15].car_year);
-    carYears.push(inventory[16].car_year);
-    carYears.push(inventory[17].car_year);
-    carYears.push(inventory[18].car_year);
-    carYears.push(inventory[19].car_year);
-    carYears.push(inventory[20].car_year);
-    carYears.push(inventory[21].car_year);
-    carYears.push(inventory[22].car_year);
-    carYears.push(inventory[23].car_year);
-    carYears.push(inventory[24].car_year);
-    carYears.push(inventory[25].car_year);
-    carYears.push(inventory[26].car_year);
-    carYears.push(inventory[27].car_year);
-    carYears.push(inventory[28].car_year);
-    carYears.push(inventory[29].car_year);
-    carYears.push(inventory[30].car_year);
-    carYears.push(inventory[31].car_year);
-    carYears.push(inventory[32].car_year);
-    carYears.push(inventory[33].car_year);
-    carYears.push(inventory[34].car_year);
-    carYears.push(inventory[35].car_year);
-    carYears.push(inventory[36].car_year);
-    carYears.push(inventory[37].car_year);
-    carYears.push(inventory[38].car_year);
-    carYears.push(inventory[39].car_year);
-    carYears.push(inventory[40].car_year);
-    carYears.push(inventory[41].car_year);
-    carYears.push(inventory[42].car_year);
-    carYears.push(inventory[43].car_year);
-    carYears.push(inventory[44].car_year);
-    carYears.push(inventory[45].car_year);
-    carYears.push(inventory[46].car_year);
-    carYears.push(inventory[47].car_year);
-    carYears.push(inventory[48].car_year);
-    carYears.push(inventory[49].car_year);
+for (i = 0; i < inventory.length; i++) {
+    carYears.push(inventory[i].car_year);
+    
 }
 carYears.sort();
 console.log(carYears);
@@ -194,12 +96,29 @@ console.log(carYears);
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
 let oldCars = [];
-console.log(); 
+for (let i = 0; i < carYears.length; i++){
+    if (carYears[i] < 2000) {
+        oldCars.push(carYears[i]);
+    }
+    else {
+
+    }
+}
+console.log(oldCars.length); 
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi = [];
-console.log();
+for (let i = 0; i < inventory.length; i++){
+    if (inventory[i].car_make === "BMW") {
+        BMWAndAudi.push(inventory[i]);
+    }
+    else if (inventory[i].car_make === "Audi") {
+        BMWAndAudi.push(inventory[i]);
+    }
+}
+console.log("This is a list of all the BMW and Audi cars on the lot: " +
+JSON.stringify(BMWAndAudi));
 
 
 
